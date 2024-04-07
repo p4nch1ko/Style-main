@@ -8,7 +8,6 @@
 }
 
 header {
-
     top: 0;
     left: 0;
     width: 100%;
@@ -19,13 +18,27 @@ header {
     background: var(--text);
     color: var(--text-inverse);
     border-color: var(--text);
-
 }
 
 header span {
     font-weight: 600;
     letter-spacing: 2px;
 }
+
+
+.social .social-bt {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    text-decoration-thickness: 2px;
+    position: relative;
+    right: 3.5cm;
+  }
+
+  .social .social-bt:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+  }
 
 
 .navbar-toggler {
@@ -44,19 +57,6 @@ nav {
     width: 100%;
     height: 70px;
 }
-
-
-.navbar-logo {
-    z-index: 10;
-    background-image: url(/images/anett-logo-white.svg);
-    background-repeat: no-repeat;
-}
-
-.navbar-logo-scrolled {
-    background-image: url(/images/anett-logo-black.svg);
-    background-repeat: no-repeat;
-}
-
 
 .nav-link {
     --spacing: 1em;
@@ -126,33 +126,26 @@ nav {
     display: none;
 }
 
-.diagonal{
+.dig{
     transform: rotate(-3deg);
 
 }
-.non-diagonal {
+.no-dig {
     margin-top: 3%;
     transform: rotate(3deg);
     z-index: 10;
 }
 
-.img-fluid {
+.fluid {
     width: 100%;
   
 }
 
-#img1 {
+#in {
     height: 690px;
 }
 
-.text {
-    color: white;
-}
-.text-scrolled {
-    color: #000;
-}
-
-#img2 {
+#im {
     position: absolute;
     left:0px;
     top: 100px;
@@ -160,7 +153,7 @@ nav {
     height: auto;
 }
 
-.imgx {
+.imgg {
     position: absolute;
     left:0px;
     top: auto;
@@ -168,7 +161,15 @@ nav {
     height: auto;
 }
 
-#anett-text {
+.text {
+    color: white;
+}
+
+.text-scrolled {
+    color: #000;
+}
+
+#text {
     font-family: 'Stainy Personal Use Only', sans-serif;
     width: 500px;
     align-items: center;
@@ -180,7 +181,7 @@ nav {
     z-index: 100;
 }
 
-.anett-front {
+.front {
     font-family: 'Poppins', sans-serif;
     position: relative;
     text-align: center;
@@ -227,7 +228,7 @@ nav {
     padding: auto;
 }
 
-.sponsors-img {
+.sponsors-images {
     height: 120px;
     width: auto;
     z-index: 10;
@@ -243,22 +244,6 @@ nav {
     margin-left: -6px;
     margin-bottom: -3%;
     height: 100px;
-}
-
-.hr {
-    width: 200px;
-    height: 50px;
-    color: white;
-    z-index: 100;
-}
-
-
-@font-face {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2) format('woff2');
-    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
 }
 
 .wta-ranking{
@@ -285,7 +270,7 @@ nav {
 }
 
 
-.social-links {
+.social {
     transform: rotate(90deg);
     text-transform: uppercase;
     font-family: "Zona Pro",sans-serif;
@@ -299,7 +284,7 @@ nav {
     margin-top: 400px;
 }
 
-.social-links a.social-bt {
+.social a.social-bt {
     display: inline-block;
     padding: 0 0 7px 0;
     color: #fff;
@@ -364,13 +349,13 @@ h2 {
     transition-duration: 0.5s;
 }
 
-.footer-pic {
+.footer-img {
     position: relative;
     height: 900px;
     z-index: -10;
 }
 
-.footer-information {
+.footer-info {
     z-index: 100;
     text-align: center;
     margin-top: -54%;
@@ -378,7 +363,7 @@ h2 {
     color: #fff;
 }
 
-.footer-information-p {
+.footer-info-a {
     color: #fff;
     text-align: center;
     font-size: 15px;
@@ -394,7 +379,7 @@ h2 {
     align-items: center;
 }
 
-.contact-information {
+.contact-info {
     transform: rotate(3deg);
     z-index: 100;
     text-align: center;
@@ -403,7 +388,7 @@ h2 {
     color: rgb(114, 114, 114);
 }
 
-.contact-pic {
+.contact-img {
     margin-left: 47%;
     transform: rotate(3deg);
     padding-bottom: 1%;
@@ -416,32 +401,36 @@ h2 {
     margin-bottom: 20%;
 }
 
-.float-child {
+.float-a {
     width: 33%;
     float: left;
     padding: 10px;
     
 } 
 
-.float-child2 {
+.float-a1 {
     width: 65%;
     float: left;
     padding: 30px;
     
 }
 
-.float-child3 {
+.float-a2 {
 	width: 50%;
 	float: left;
 	padding-top: 100px;
 }
 
-.float-pic{
+.float-a3 {
+    padding-left: 20px;
+}
+
+.float-img{
     width: 360px;
     height: 220px;
 }
 
-.float-pic-footer{
+.float-img-footer{
     width: 360px;
     height: auto;
 }
@@ -454,9 +443,6 @@ h2 {
     padding: 20px;
 }
 
-.float-child p {
-    padding-left: 20px;
-}
 
 .btn-large, .page .btn-rounded {
     color: #272d30;
@@ -507,8 +493,19 @@ h2 {
     background-size: 15px;
     transition-duration: 0.5s;
 }
+.footer-info-a {
+    text-decoration: underline;
+  }
 
 
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
 
 
 
