@@ -154,11 +154,26 @@ nav {
 }
 
 .imgg {
-    position: absolute;
-    left:0px;
-    top: auto;
-    max-width: 56%;
+    max-width: 300px;
     height: auto;
+}
+@media (max-width: 768px) {
+    .imgg {
+        max-width: 100%;
+    }
+}
+
+.float-a {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.float-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .text {
@@ -349,6 +364,20 @@ h2 {
     transition-duration: 0.5s;
 }
 
+.btn-rounded {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .btn-rounded {
+        margin-top: 20px;
+    }
+}
+
+
 .footer-img {
     position: relative;
     height: 900px;
@@ -402,6 +431,12 @@ h2 {
 }
 
 .float-a {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    
+}
+.float-a4 {
     width: 33%;
     float: left;
     padding: 10px;
@@ -495,7 +530,113 @@ h2 {
 }
 .footer-info-a {
     text-decoration: underline;
-  }
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.image-wrapper {
+    flex: 1;
+    padding: 5px;
+}
+
+.float-img-footer {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .float-a {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .float-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2.offset-5 {
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-info {
+        position: relative;
+        top: -14cm;
+    }
+
+    .footer-info-a {
+        position: relative;
+        top: -14cm;
+    }
+}
+@media (max-width: 768px) {
+    .float-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .float-a4 {
+        position: relative;
+        top: -13cm;
+    }
+}
+
+@media (max-width: 768px) {
+    .float-a4 img {
+        width: 150%;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-rounded-footer {
+        position: relative;
+        top: -14cm;
+        left: 2.5cm;
+    }
+}
+
+@media (max-width: 768px) {
+    .social {
+        position: relative;
+        top: -10cm;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact.dig {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .float-container {
+        margin-bottom: -70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imgg {
+        margin-top: 40px;
+    }
+}
 
 
 
