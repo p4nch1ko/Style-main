@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kassid💞</title>
     <link
@@ -88,7 +89,7 @@
     
           <div class="sponsors dig">
             <div class="no-dig">
-              <p>SPONSORID</p>
+              <p class="spons">SPONSORID</p>
             </div>
             <div class="img-fluid non-diagonal">
                   <img src="images/friskes.png" class="sponsors-images">
@@ -238,6 +239,35 @@
     $('#cross').on('click', function (e) {
         $("cross-menu").addClass("show");
     }); 
+	
+	$(document).ready(function(){
+    // Function to change sponsor images automatically
+    function changeSponsorImages() {
+        var images = $('.sponsors-images');
+        var index = 0;
+
+        setInterval(function() {
+            // Hide all images
+            images.hide();
+            
+            // Show the next image
+            images.eq(index).show();
+
+            // Increment index and reset if reached the end
+            index++;
+            if (index >= images.length) {
+                index = 0;
+            }
+        }, 3000); // Change image every 3 seconds
+    }
+
+    // Check if the screen width is less than 768px (indicating mobile device)
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        // Call the function to start changing images
+        changeSponsorImages();
+    }
+});
+
     </script>
   </body>
 </html>
