@@ -1,1 +1,0 @@
-"# kasut_liides" 
