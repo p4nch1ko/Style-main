@@ -7,13 +7,6 @@
     justify-content: space-around;
 }
 
-@viewport {
-  width: device-width;
-  zoom: 1.0 ;
-}
-
-
-
 header {
     top: 0;
     left: 0;
@@ -42,10 +35,10 @@ header span {
     right: 3.5cm;
   }
 
- .social .social-bt:hover {
+  .social .social-bt:hover {
     text-decoration: underline;
     text-decoration-thickness: 2.5px;
- }
+  }
 
 
 .navbar-toggler {
@@ -137,11 +130,6 @@ nav {
     transform: rotate(-3deg);
 
 }
-
-.spons{
-	margin-bottom: 3%;
-}
-
 .no-dig {
     margin-top: 3%;
     transform: rotate(3deg);
@@ -166,12 +154,28 @@ nav {
 }
 
 .imgg {
-    position: absolute;
-    left:0px;
-    top: auto;
-    max-width: 56%;
+    max-width: 300px;
     height: auto;
-	
+}
+@media (max-width: 768px) {
+    .imgg {
+        max-width: 100%;
+    }
+}
+
+
+
+.float-a {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.float-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .text {
@@ -214,6 +218,15 @@ nav {
     letter-spacing: 2px;
 }
 
+.col-facts{
+	position: absolute;
+	top: 1100px;
+    right:0px;
+    max-width: 50%;
+    height: auto;
+}
+
+
 .overline {
     width: 70%;
     margin-left: -8%;
@@ -225,8 +238,29 @@ nav {
     top: 100px;
 }
 
+.frontpage-facts-desktop{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	flex-wrap:wrap;
+	-webkit-box-pack:end;
+	justify-content:flex-end;
+	-webkit-box-align:stretch;
+	align-items:stretch
+}
+
+
+.fact{
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	position:relative;
+	width:50%;
+	padding:20px;
+	text-align:center
+}
+
 .sponsors {
-    position: absolute;
+     position: absolute;
     font-size: 13px;
     font-weight: 100;
     letter-spacing: 1px;
@@ -243,11 +277,9 @@ nav {
     white-space: nowrap;
 }
 
-
-
 .sponsors-images {
+    height: 120px;
     width: auto;
-    height: 100px;
     z-index: 10;
     margin: 1%;
     margin-top: -2%;
@@ -366,6 +398,20 @@ h2 {
     transition-duration: 0.5s;
 }
 
+.btn-rounded {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .btn-rounded {
+        margin-top: 20px;
+    }
+}
+
+
 .footer-img {
     position: relative;
     height: 900px;
@@ -423,6 +469,12 @@ h2 {
     float: left;
     padding: 10px;
     
+}
+.float-a4 {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    
 } 
 
 .float-a1 {
@@ -445,30 +497,7 @@ h2 {
 .float-img{
     width: 360px;
     height: 220px;
-	
 }
-
-
-
-@media only screen and (max-width: 768px) {
-  .float-container {
-    margin-left: 0; 
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  .float-a {
-    width: 100%; 
-    float: none; 
-    display: block; 
-    padding: 10px;
-  }
-  
-  .float-img{
-    width: 100%;
-	height:auto;
-	}
-}
-
 
 .float-img-footer{
     width: 360px;
@@ -535,7 +564,113 @@ h2 {
 }
 .footer-info-a {
     text-decoration: underline;
-  }
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.image-wrapper {
+    flex: 1;
+    padding: 5px;
+}
+
+.float-img-footer {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .float-a {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .float-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2.offset-5 {
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-info {
+        position: relative;
+        top: -14cm;
+    }
+
+    .footer-info-a {
+        position: relative;
+        top: -14cm;
+    }
+}
+@media (max-width: 768px) {
+    .float-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .float-a4 {
+        position: relative;
+        top: -13cm;
+    }
+}
+
+@media (max-width: 768px) {
+    .float-a4 img {
+        width: 150%;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-rounded-footer {
+        position: relative;
+        top: -14cm;
+        left: 2.5cm;
+    }
+}
+
+@media (max-width: 768px) {
+    .social {
+        position: relative;
+        top: -10cm;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact.dig {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .float-container {
+        margin-bottom: -70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imgg {
+        margin-top: 40px;
+    }
+}
 
 
 
